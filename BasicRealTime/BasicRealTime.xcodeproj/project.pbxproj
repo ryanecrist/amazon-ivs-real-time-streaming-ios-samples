@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CBB92AF2C46078E002C31DD /* AVSampleBufferDisplayLayer+IVS.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBB92AE2C46078E002C31DD /* AVSampleBufferDisplayLayer+IVS.m */; };
 		CDEF626E2ABAAF1863390C0F /* libPods-IVSClients-BasicRealTime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC4C53BBA1AF9FAFFA24C41 /* libPods-IVSClients-BasicRealTime.a */; };
 		EA0877262A1D8C1E00D08FEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0877252A1D8C1E00D08FEF /* AppDelegate.swift */; };
 		EA0877282A1D8C1E00D08FEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0877272A1D8C1E00D08FEF /* SceneDelegate.swift */; };
@@ -24,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		11F1B35180A71448243E2721 /* Pods-IVSClients-BasicRealTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVSClients-BasicRealTime.release.xcconfig"; path = "Target Support Files/Pods-IVSClients-BasicRealTime/Pods-IVSClients-BasicRealTime.release.xcconfig"; sourceTree = "<group>"; };
+		1CBB92AC2C46078D002C31DD /* BasicRealTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicRealTime-Bridging-Header.h"; sourceTree = "<group>"; };
+		1CBB92AD2C46078E002C31DD /* AVSampleBufferDisplayLayer+IVS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVSampleBufferDisplayLayer+IVS.h"; sourceTree = "<group>"; };
+		1CBB92AE2C46078E002C31DD /* AVSampleBufferDisplayLayer+IVS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVSampleBufferDisplayLayer+IVS.m"; sourceTree = "<group>"; };
 		8DC4C53BBA1AF9FAFFA24C41 /* libPods-IVSClients-BasicRealTime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IVSClients-BasicRealTime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D947D46D41279D58B8769797 /* Pods-IVSClients-BasicRealTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVSClients-BasicRealTime.debug.xcconfig"; path = "Target Support Files/Pods-IVSClients-BasicRealTime/Pods-IVSClients-BasicRealTime.debug.xcconfig"; sourceTree = "<group>"; };
 		EA0877222A1D8C1E00D08FEF /* BasicRealTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicRealTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +99,9 @@
 				EA5E029E2A1E4377008A0874 /* StageLayoutCalculator.swift */,
 				EA5E02922A1E3B9C008A0874 /* StageParticipant.swift */,
 				EA0877292A1D8C1E00D08FEF /* ViewController.swift */,
+				1CBB92AD2C46078E002C31DD /* AVSampleBufferDisplayLayer+IVS.h */,
+				1CBB92AE2C46078E002C31DD /* AVSampleBufferDisplayLayer+IVS.m */,
+				1CBB92AC2C46078D002C31DD /* BasicRealTime-Bridging-Header.h */,
 			);
 			path = BasicRealTime;
 			sourceTree = "<group>";
@@ -161,6 +168,7 @@
 				TargetAttributes = {
 					EA0877212A1D8C1E00D08FEF = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -251,6 +259,7 @@
 				EA0877262A1D8C1E00D08FEF /* AppDelegate.swift in Sources */,
 				EA6D45352B7EA2D200982878 /* UIView+Extensions.swift in Sources */,
 				EA0877282A1D8C1E00D08FEF /* SceneDelegate.swift in Sources */,
+				1CBB92AF2C46078E002C31DD /* AVSampleBufferDisplayLayer+IVS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -414,6 +424,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.amazon-samplecode.Stages";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicRealTime/BasicRealTime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -425,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -443,6 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.amazon-samplecode.Stages";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicRealTime/BasicRealTime-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
